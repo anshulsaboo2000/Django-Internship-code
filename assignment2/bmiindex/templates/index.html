@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>BMI INDEX CALCULLATOR FORM</title>
+    </head>
+    <body>
+        <center><h1>BMI INDEX CALCULLATOR</h1></center>
+        <div class="bmiform">
+            <center>
+                <form method="GET" action="{% url 'result'%}">
+                    <input type="number" step="0.01" placeholder="Enter your height in meters" name="height">
+                    <input type="number" step="0.01" placeholder="Enter your weight in kilograms" name="weight">
+                    <input type="submit" value="submit">
+                </form>
+            </center>
+        </div>
+    </body>
+</html>
