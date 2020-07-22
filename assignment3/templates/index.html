@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Insert Record</title>
+    </head>
+    <body alignment=center>
+        <h1>Add your Details</h1>
+        <form method="POST" action="{% url 'index'}">
+            {% csrf_token %}
+            <input type="text" placeholder="Enter your username" name="username">
+            <input type="password" placeholder="Enter your password" name="passwd">
+            <input type="number" placeholder="Enter your phonenumber" name="phonenumber">
+            <input type="text" placeholder="Enter your address" name="address">
+            <input type="button" value="Submit" >
+        </form>
+    </body>
+</html>
