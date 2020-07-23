@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title>View Record</title>
+    </head>
+    <body>
+        {% for users in user %}
+        <p>{{user.username}}</p>
+        <p> {{user.passwd}} </p>
+        <p> {{user.phonenumber}} </p>
+        <p> {{user.address}} </p> 
+        {% endfor %}       
+    </body>
+</html>
